@@ -11,7 +11,7 @@ class HighScores
   end
 
   def personal_top_three
-    @scores.sort { |a, b| b <=> a }.take(3)
+    @scores.max(3)
   end
 
   def latest
